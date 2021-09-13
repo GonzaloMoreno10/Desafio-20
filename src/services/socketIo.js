@@ -16,8 +16,8 @@ export const initIo = async(server)=> {
             console.log("Me llego un Mensaje y lo voy a guardar")
             let email = data.email;
             let fecha = data.fecha;
-            let texto = data.texto;
-            console.log(mensaje)
+            let texto = data.texto
+            let mensaje = new Mensaje({email,fecha,texto});
             if(mensaje){
                 await mensajeRepo.createMensaje(mensaje)
             }

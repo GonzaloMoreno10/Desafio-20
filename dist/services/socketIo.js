@@ -39,7 +39,6 @@ var initIo = /*#__PURE__*/function () {
               fecha,
               texto
             });
-            console.log(mensaje);
 
             if (mensaje) {
               yield _mensajes.mensajes.createMensaje(mensaje);
